@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>New Tab</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        text-align: center;
+        color: #4ade80;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .progress-container {
+        width: 60%;
+        max-width: 800px;
+        margin: 0 auto;
+        height: 60px;
+        border: 2px solid #4ade80;
+        overflow: hidden;
+      }
+
+      .progress-bar {
+        background: #276e41;
+        height: 100%;
+        width: 0%; /* Will be set by JS */
+        transition: width 0.5s ease-in-out;
+      }
+
+      .progress-text {
+        margin-top: 3rem;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 2.5em;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
+    <div id="progress-text" class="progress-text"></div>
+  </body>
+
+  <script src="/js/index.js"></script>
+</html>
